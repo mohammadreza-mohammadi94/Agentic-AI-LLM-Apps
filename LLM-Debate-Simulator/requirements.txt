@@ -1,0 +1,8 @@
+# Core libraries
+openai
+groq
+python-dotenv
+gradio
+
+# To install all dependencies, run:
+# pip install -r requirements.txt
