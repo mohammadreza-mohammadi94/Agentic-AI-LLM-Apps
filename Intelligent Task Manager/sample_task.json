@@ -1,0 +1,22 @@
+[
+  {
+    "task_name": "Develop Q3 Marketing Strategy",
+    "description": "Analyze Q2 performance and outline a detailed marketing plan for the next quarter.",
+    "deadline": "2025-07-15"
+  },
+  {
+    "task_name": "Fix Login Bug (Ticket #482)",
+    "description": "Users are reporting a critical issue where they cannot log in on mobile devices.",
+    "deadline": "2025-07-05"
+  },
+  {
+    "task_name": "Prepare Slides for Board Meeting",
+    "description": "Create a presentation summarizing the team's progress and upcoming milestones.",
+    "deadline": "2025-07-10"
+  },
+  {
+    "task_name": "Team Brainstorming Session",
+    "description": "Schedule a creative session to brainstorm ideas for the new 'Project Phoenix'.",
+    "deadline": "2025-07-20"
+  }
+]
