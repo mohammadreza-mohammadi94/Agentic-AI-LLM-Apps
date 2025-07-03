@@ -1,0 +1,8 @@
+# Core libraries
+openai
+python-dotenv
+requests
+beautifulsoup4
+
+# To install all dependencies, run:
+# pip install -r requirements.txt
