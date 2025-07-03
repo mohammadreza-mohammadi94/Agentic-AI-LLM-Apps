@@ -45,7 +45,7 @@ Follow these steps to set up and run the project on your local machine.
 ### 1\. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/intelligent-task-manager.git
+git clone https://github.com/mohammadreza-mohammadi94/intelligent-task-manager.git
 cd intelligent-task-manager
 ```
 
