@@ -1,0 +1,9 @@
+# Core libraries
+openai
+google-generativeai
+python-dotenv
+gradio
+pypdf
+
+# To install all dependencies, run:
+# pip install -r requirements.txt
