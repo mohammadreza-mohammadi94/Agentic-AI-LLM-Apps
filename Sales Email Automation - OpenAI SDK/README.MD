@@ -31,6 +31,3 @@ python sales_email_automation.py
 
 The system will generate and (mock) send a sales email based on the user’s request.
 
----
-
-Let me know if you want to turn this into a deployable API or web UI.
