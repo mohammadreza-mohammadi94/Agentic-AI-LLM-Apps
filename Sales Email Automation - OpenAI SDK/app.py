@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 """
 sales_email_automation.py
@@ -23,7 +24,7 @@ from pprint import pprint
 
 # The official OpenAI Agents SDK library
 # To install: pip install openai-agents
-from openai_agents import Agent, run, track, function_tool
+from agents import Agent, run, trace, function_tool
 
 
 # --- 2. Configuration and Environment Loading ---
@@ -174,7 +175,7 @@ async def main():
     print("🚀 Starting Automated Sales SDR Workflow...")
     
     # Use the 'track' context manager to log all agent interactions for debugging.
-    with track("Automated_SDR_Workflow_Run"):
+    with trace("Automated_SDR_Workflow_Run"):
         # The 'run' function executes the top-level agent with the initial message.
         result = await run(sales_manager_agent, initial_message)
         
