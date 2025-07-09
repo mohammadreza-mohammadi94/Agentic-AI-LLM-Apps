@@ -1,79 +1,45 @@
-# LangAgents
+# 🚀 AgenticAI
 
-A modular repository for experimenting with **LangChain**, **AI Agents**, and **Autonomous AI Workflows**. This hub includes practical implementations, educational mini-projects, and advanced prototypes to explore the full potential of LLMs as reasoning and decision-making systems.
-
----
-
-## 🔍 What’s Inside
-
-- 🧩 **LangChain Projects**: 
-  - Prompt engineering pipelines
-  - Retrieval Augmented Generation (RAG)
-  - Chain-of-Thought reasoning
-  - LangChain Expression Language (LCEL) demos
-
-- 🤖 **LLM Agents**:
-  - Tool-using agents (ReAct, Toolformer)
-  - Memory-based agents (AutoGPT, BabyAGI-style)
-  - Multi-agent collaboration
-
-- 🧠 **Autonomous Workflows**:
-  - Planning, task decomposition, execution
-  - Agent loop architectures
-  - Agent + LangGraph examples (coming soon)
+A comprehensive multi-agent AI framework featuring specialized agents with guardrails, built for real-world automation tasks (e.g., resume analysis, sales outreach, word counting).
 
 ---
 
-## ⚙️ Tech Stack
+## ⚙️ Architecture Highlights
 
-- `LangChain`
-- `Python`
-- `OpenAI / Cohere / HuggingFace`
-- `FAISS / Chroma` for vector DBs
-- `Streamlit / Gradio` for interfaces
-- `Docker` for isolated builds (optional)
+* **Agentic Orchestration**: Manager agents direct specialist agents as tools, enabling clear multi-step workflows.
+* **Guardrails**: Input validation layers that prevent privacy violations and unsafe inputs.
+* **Multi-LLM Integration**: Easily plug in different providers for redundancy and performance optimization.
+* **Modular & Extendable**: Projects share reusable agent-building patterns, guardrail designs, and runner logic using `openai-agents`.
 
 ---
 
-## 🚀 How to Run
-
-Each project is self-contained. Navigate into any project folder and follow its individual `README.md`. In general:
+## 🛠️ Getting Started
 
 ```bash
-cd projects/langchain-rag-basic
+git clone https://github.com/mohammadreza-mohammadi94/AgenticAI.git
+cd AgenticAI/<your-subproject>
 pip install -r requirements.txt
-python app.py
+# Add `.env` file with keys: OPENAI_API_KEY, SENDGRID_API_KEY, etc.
+python <script_name>.py
 ```
 
 ---
 
-## 📁 Repository Structure
+## 🌟 Why AgenticAI?
 
-```bash
-LangAgents/
-│
-├── projects/
-│   ├── langchain-basic/
-│   ├── langchain-rag/
-│   ├── agent-react/
-│   ├── agent-multi/
-│   └── ...
-│
-├── shared_modules/
-│   ├── tools/
-│   ├── memory/
-│   └── agents/
-│
-└── README.md
-```
-
-
-## 🤝 Contributing
-
-Pull requests, discussions, and issues are welcome. Whether you're experimenting with LangChain, testing agents, or exploring autonomous reasoning — this hub is for you.
+* Achieve **safe, multi-stage automation** with minimal code.
+* Design **flexible agent workflows**, combining GPT-powered toolkits with domain guardrails.
+* Deploy production-grade AI pipelines across HR, sales, analytics, and more.
 
 ---
 
-## 📜 License
+## 📚 Next Steps
 
-This repository is licensed under the [MIT License](LICENSE).
+* Add real email sending via SendGrid or SMTP
+* Deploy as APIs or conversational bots
+* Integrate custom datasets and retrieval agents
+* Improve guardrails for broader compliance enforcement
+
+---
+
+**AgenticAI** equips you to build safe, modular, and powerful AI workflows—no need to reinvent orchestration or alignment logic. Enjoy experimenting!
