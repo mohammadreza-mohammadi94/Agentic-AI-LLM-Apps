@@ -1,0 +1,39 @@
+Long Short-Term Memory (LSTM) is a type of artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTMs have feedback connections, allowing them to exploit temporal dependencies across sequences of data. LSTM is designed to handle the issue of vanishing or exploding gradients, which can occur when training traditional RNNs on sequences of data. This makes them well-suited for tasks involving sequential data, such as natural language processing (NLP), speech recognition, and time series forecasting
+
+LSTM networks introduce memory cells, which have the ability to retain information over long sequences. Each memory cell has three main components: an input gate, a forget gate, and an output gate. These gates help regulate the flow of information in and out of the memory cell.
+
+The input gate determines how much of the new input should be stored in the memory cell. It takes the current input and the previous hidden state as inputs, and outputs a value between 0 and 1 for each element of the memory cell.
+
+The forget gate decides which information to discard from the memory cell. It takes the current input and the previous hidden state as inputs, and outputs a value between 0 and 1 for each element of the memory cell. A value of 0 means the information is ignored, while a value of 1 means it is retained.
+
+The output gate controls how much of the memory cell’s content should be used to compute the hidden state. It takes the current input and the previous hidden state as inputs, and outputs a value between 0 and 1 for each element of the memory cell.
+
+By using these gates, LSTM networks can selectively store, update, and retrieve information over long sequences. This makes them particularly effective for tasks that require modeling long-term dependencies, such as speech recognition, language translation, and sentiment analysis.
+
+To summaries these gates,
+Forget Gate:
+Determines what information to discard from the cell state.
+It takes input (current time step and previous hidden state) and produces a number between 0 and 1 for each number in the cell state. 1 represents “completely keep this” while 0 represents “completely get rid of this.”
+2. Input Gate:
+
+. Decides what new information to store in the cell state.
+
+. It consists of two parts:
+
+a. A sigmoid layer (the “input gate layer”) that decides which values to update.
+
+b. A tanh layer (which creates a vector of new candidate values to add to the cell state).
+
+3. Output Gate:
+
+Determines the next hidden state based on the updated cell state.
+Filters the information that the LSTM will output based on the updated cell state.
+Key components of LSTM:
+
+Cell State:
+This runs straight down the entire chain of the LSTM, with only some minor linear interactions. It’s the core differentiator in LSTMs that allows them to maintain and control long-term dependencies.
+Hidden State:
+The LSTM’s output at a particular time step based on the cell state.
+LSTMs use these gates to regulate the flow of information, which allows them to learn long-term dependencies in data, making them particularly effective for tasks involving sequential data like time series prediction, natural language processing, speech recognition, and more.
+
+By controlling and memorizing information over long sequences, LSTMs can mitigate the problems of vanishing and exploding gradients, enabling more effective training and better capturing of long-term patterns in sequential data
