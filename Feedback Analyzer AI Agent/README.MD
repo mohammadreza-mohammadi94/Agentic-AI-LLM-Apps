@@ -6,9 +6,9 @@ This project is a command-line tool that uses AI to analyze customer feedback. I
 
 ## ✨ Features
 
-  * [cite\_start]**Sentiment Analysis**: Automatically determines if feedback is **positive**, **negative**, or **neutral**. [cite: 3]
-  * [cite\_start]**Problem Summarization**: Distills customer feedback into a single, concise sentence identifying the main issue. [cite: 3]
-  * [cite\_start]**AI-Powered Responses**: Generates a ready-to-use, professional response draft based on the analyzed problem. [cite: 2]
+  * **Sentiment Analysis**: Automatically determines if feedback is **positive**, **negative**, or **neutral**. [cite: 3]
+  * **Problem Summarization**: Distills customer feedback into a single, concise sentence identifying the main issue. [cite: 3]
+  * **AI-Powered Responses**: Generates a ready-to-use, professional response draft based on the analyzed problem. [cite: 2]
   * **Command-Line Interface**: Easy to use directly from your terminal with text or file inputs.
   * **Structured Output**: Saves the full analysis and suggested reply in both `JSON` and `Markdown` formats.
 
