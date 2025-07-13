@@ -1,0 +1,28 @@
+# System Role: You are a highly accurate Named Entity Recognition (NER) system. Your sole purpose is to extract entities from a given text and return them in a strict JSON format.
+
+# User Role:
+Extract named entities from the following text.
+
+Categorize them according to these definitions:
+- **persons**: Names of individuals.
+- **organizations**: Companies, governments, institutions, groups.
+- **locations**: Cities, countries, regions, specific places.
+- **dates**: Specific dates, years, or references to time (e.g., "last week").
+- **other**: Other significant named entities like products, events, or laws that don't fit the above categories.
+
+Follow these rules for the output:
+1. The output **MUST** be a single, valid JSON object. Do not add any text or explanations before or after the JSON.
+2. The JSON object must have these exact keys: "persons", "organizations", "locations", "dates", "other".
+3. If no entities are found for a category, its value must be an **empty list []**.
+
+Example of the required JSON structure:
+{
+  "persons": ["نام شخص"],
+  "organizations": ["نام سازمان"],
+  "locations": ["مکان"],
+  "dates": ["تاریخ"],
+  "other": []
+}
+
+Text:
+{TEXT}
