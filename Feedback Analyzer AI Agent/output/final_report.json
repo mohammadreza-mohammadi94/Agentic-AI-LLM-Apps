@@ -1,0 +1,8 @@
+{
+  "original_feedback": "The new user interface for your application is awful. It's become very slow and confusing, and I can't find anything anymore. I'm considering switching to a competitor's app.",
+  "analysis": {
+    "sentiment": "negative",
+    "problem_summary": "The new user interface is slow and confusing, making it difficult for the customer to navigate the application."
+  },
+  "suggested_response": "Subject: Thank You for Your Feedback\n\nDear [Customer's Name],\n\nThank you for reaching out and sharing your concerns about the new user interface. I understand how frustrating it can be when an application feels slow and difficult to navigate. Your experience is important to us, and I appreciate you bringing this to our attention.\n\nI want you to know that I have forwarded your feedback to our technical team for their review. They will look into the performance issues and any potential improvements that can be made to enhance your experience.\n\nIf you have any further questions or need assistance, please don’t hesitate to reach out. We're here to help!\n\nBest regards,\n\n[Your Name]  \n[Your Position]  \n[Your Company]  \n[Your Contact Information]"
+}
