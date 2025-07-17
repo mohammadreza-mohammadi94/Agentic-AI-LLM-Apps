@@ -137,7 +137,7 @@ async def main():
             ])
         
         research_plan = plan_result.steps
-        print(f"Plan clreated successfully: {research_plan}")
+        print(f"Plan created successfully: {research_plan}")
 
         # Step 2
         print("\n--- Phase 2: Searching ---")
