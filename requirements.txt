@@ -1,0 +1,17 @@
+# Core dependencies
+openai>=1.0.0
+langchain>=0.2.0
+autogen>=0.2.0
+streamlit>=1.32.0
+
+# Utilities
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Dev tools
+black>=24.0
+flake8>=7.0
+isort>=5.13
+
+# For indexing & scripts
+pyyaml>=6.0
