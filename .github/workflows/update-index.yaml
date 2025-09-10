@@ -1,0 +1,45 @@
+name: Update Projects Index and README
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'projects/**'
+      - 'generate_index.py'
+      - 'inject_index.py'
+      - 'README.md'
+      - '!PROJECTS_INDEX.md'  # اگر فقط PROJECTS_INDEX.md تغییر کنه، بازهم اجرا می‌شه اما شرط پایین جلوی لوپ می‌گیره
+
+jobs:
+  update-index:
+    # جلوگیری از اجرا در commitهایی که از workflow انجام شده‌اند:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies (if any)
+        run: python -m pip install --upgrade pip
+
+      - name: Generate PROJECTS_INDEX.md
+        run: python3 generate_index.py --root projects --output PROJECTS_INDEX.md
+
+      - name: Inject into README.md
+        run: python3 inject_index.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add PROJECTS_INDEX.md README.md || true
+          # اگر چیزی تغییر نکرده، commit نخواهد شد
+          git diff --staged --quiet || (git commit -m "chore(docs): update PROJECTS_INDEX and README [skip ci]" && git push)
