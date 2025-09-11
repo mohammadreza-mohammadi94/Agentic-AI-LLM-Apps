@@ -7,9 +7,8 @@ on:
     paths:
       - 'projects/**'
       - 'scripts/generate_and_inject.py'
-      - 'scripts/inject_index.py'
       - 'README.md'
-      - '!PROJECTS_INDEX.md'  # اگر فقط PROJECTS_INDEX.md تغییر کنه، بازهم اجرا می‌شه اما شرط پایین جلوی لوپ می‌گیره
+      - '!PROJECTS_INDEX.md'
 
 jobs:
   update-index:
@@ -31,10 +30,7 @@ jobs:
         run: python -m pip install --upgrade pip
 
       - name: Generate PROJECTS_INDEX.md
-        run: python3 scripts/generate_index.py --root projects --output PROJECTS_INDEX.md
-
-      - name: Inject into README.md
-        run: python3 scripts/inject_index.py
+        run: python3 scripts/generate_and_inject.py --root projects --output PROJECTS_INDEX.md
 
       - name: Commit and push changes
         run: |
