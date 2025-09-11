@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'projects/**'
-      - 'scripts/generate_index.py'
+      - 'scripts/generate_and_inject.py'
       - 'scripts/inject_index.py'
       - 'README.md'
       - '!PROJECTS_INDEX.md'  # اگر فقط PROJECTS_INDEX.md تغییر کنه، بازهم اجرا می‌شه اما شرط پایین جلوی لوپ می‌گیره
