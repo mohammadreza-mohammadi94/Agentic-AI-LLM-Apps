@@ -30,7 +30,6 @@ The `DebateManager` class in `src/debate_manager.py` is the core orchestrator.
 4.  After the debate concludes, it saves the entire transcript to a Markdown file (e.g., `debate_transcript_YYYYMMDD_HHMMSS.md`).
 
 ## 🚀 Getting Started
-
 ### 1. Prerequisites
 
 -   Python 3.7+
