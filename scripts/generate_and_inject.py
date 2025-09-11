@@ -11,6 +11,7 @@ Usage:
     python3 generate_and_inject.py --root myproj  # change projects root
     python3 generate_and_inject.py --readme README.md --start "<!-- START -->" --end "<!-- END -->"
 """
+# Libs
 from pathlib import Path
 from urllib.parse import quote
 import argparse
