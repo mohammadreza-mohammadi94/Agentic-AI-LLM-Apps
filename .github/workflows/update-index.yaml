@@ -23,12 +23,17 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
-      - name: Update README index
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Update README and Index File
         run: |
-          # your script to update README goes here
-          echo "Updating README index..."
+          python scripts/generate_and_inject.py --readme README.md
+          python scripts/generate_and_inject.py --readme PROJECTS_INDEX.md
 
       - name: Commit and Push changes
         run: |
-          git add README.md || true
-          git diff --staged --quiet || (git commit -m "chore(docs): update README index [skip ci]" && git push)
+          git add README.md PROJECTS_INDEX.md || true
+          git diff --staged --quiet || (git commit -m "chore(docs): update README and index [skip ci]" && git push)

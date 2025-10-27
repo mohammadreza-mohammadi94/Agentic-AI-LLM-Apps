@@ -1,3 +1,4 @@
+<!-- PROJECTS-INDEX-START -->
 # Project index
 
 ## agents
@@ -59,3 +60,4 @@
 
 - [ScriptGenerator](projects/utilities/ScriptGenerator) - 
 
+<!-- PROJECTS-INDEX-END -->
