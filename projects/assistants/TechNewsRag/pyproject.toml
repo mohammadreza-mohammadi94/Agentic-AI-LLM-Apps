@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "TechNewsRag"
+version = "0.1.0"
+description = "A RAG application for querying tech news articles."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "python-dotenv",
+    "langchain-community",
+    "langchain-openai",
+    "langchain-core",
+    "langchain-text-splitters",
+    "langchain-huggingface",
+    "faiss-cpu",
+    "sentence-transformers",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+technews-rag = "src.main:main"
