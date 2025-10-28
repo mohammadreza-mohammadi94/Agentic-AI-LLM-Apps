@@ -48,6 +48,7 @@ python <script_name>.py
 
 ## assistants
 
+- [Conversational-RAG-Tutor](projects/assistants/Conversational-RAG-Tutor) - # Conversational RAG Tutor for LangChain
 - [Shop-Smart-Assistant(OpenAI)](projects/assistants/Shop-Smart-Assistant%28OpenAI%29)
 - [Smart Home Assistant](projects/assistants/Smart%20Home%20Assistant)
 - [TechNewsRag](projects/assistants/TechNewsRag) - # TechNews RAG Assistant
