@@ -23,6 +23,7 @@
 - [ArxivHybridSearch](projects/assistants/ArxivHybridSearch) - # ArxivHybridSearch
 - [Conversational-RAG-Tutor](projects/assistants/Conversational-RAG-Tutor) - # Conversational RAG Tutor for LangChain
 - [FinQuery-RAG](projects/assistants/FinQuery-RAG) - # FinQuery-RAG
+- [ReviewExtractor\_OpenAI\_RAG](projects/assistants/ReviewExtractor_OpenAI_RAG) - # Movie Review Analysis with RAG
 - [Shop-Smart-Assistant(OpenAI)](projects/assistants/Shop-Smart-Assistant%28OpenAI%29)
 - [Smart Home Assistant](projects/assistants/Smart%20Home%20Assistant)
 - [TechNewsRag](projects/assistants/TechNewsRag) - # TechNews RAG Assistant
