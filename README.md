@@ -48,6 +48,7 @@ python <script_name>.py
 
 ## assistants
 
+- [ArxivHybridSearch](projects/assistants/ArxivHybridSearch) - # ArxivHybridSearch
 - [Conversational-RAG-Tutor](projects/assistants/Conversational-RAG-Tutor) - # Conversational RAG Tutor for LangChain
 - [FinQuery-RAG](projects/assistants/FinQuery-RAG) - # FinQuery-RAG
 - [Shop-Smart-Assistant(OpenAI)](projects/assistants/Shop-Smart-Assistant%28OpenAI%29)
