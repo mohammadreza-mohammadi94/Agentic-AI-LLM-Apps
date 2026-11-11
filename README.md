@@ -16,8 +16,8 @@ A comprehensive multi-agent AI framework featuring specialized agents with guard
 ## 🛠️ Getting Started
 
 ```bash
-git clone https://github.com/mohammadreza-mohammadi94/AgenticAI.git
-cd AgenticAI/<your-subproject>
+git clone https://github.com/mohammadreza-mohammadi94/Agentic-AI-LLM-Apps.git
+cd Agentic-AI-LLM-Apps/projects/<category>/<project-name>
 pip install -r requirements.txt
 # Add `.env` file with keys: OPENAI_API_KEY, SENDGRID_API_KEY, etc.
 python <script_name>.py
